@@ -1,0 +1,654 @@
+﻿/* Browser varsayılan değerleri sıfırlama */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration:none;
+	list-style-type:none;
+	font-variant:normal
+
+}
+/* Eski browserler için HTML5 display-role sıfırlama */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Browser varsayılan değerleri sıfırlama bitti */
+
+
+
+.body {
+	margin:0px;
+	padding:0px;
+	font-family:Arial;
+	color:#727272;
+	font-size:12px;
+	background-color:#ffffff;
+	background-image:url('_img/body-tail.gif'); 
+	background-repeat:repeat-x;
+	line-height:18px;
+	
+	
+}
+
+div.ortala {
+	margin:0 auto;
+	width: 960px;
+	clear: both;
+}
+
+/* header divleri */
+div.header_anasayfa {
+	height:675px;
+	width:960px;
+	background-image:url('_img/header_bg2.jpg');
+	background-repeat:no-repeat;
+	background-position:center top;
+	float:left;
+		
+}
+
+div.header_ic_sayfalar {
+	height:255px;
+	width:960px;
+	background-image:url('_img/header_bg2.jpg');
+	background-repeat:no-repeat;
+	background-position:center top;
+	float:left;
+}
+
+#header_top {
+	width:100%; 
+	height:171px; 
+	position:relative; 
+	z-index:2; 
+	left:0px; top:-675px;
+}
+
+
+
+
+#logo {
+	width:210px; 
+	height:65px; 
+	margin:17px 0px 0px 25px;
+}
+	
+#indicator {
+	width:48px; 
+	position:absolute; 
+	left:50%; 
+	margin:200px 0px 0px -24px;
+}
+
+
+#iletisim {
+	background-image:url('_img/div_bg.png');
+	float:right;
+	height:38px;
+	margin-top:-20px;
+
+
+}
+
+#menu_container {
+	width:100%;
+	height:90px;
+	float:right;	
+
+}
+
+.ustmenu {
+	width:100%;
+	height:50px;
+	float:left;
+	}
+
+
+.ustmenu ul {
+	list-style-type: none;
+	height: 50px;
+	width: 100%;
+	background-image:url('_img/menu_bg.png');
+	
+	
+}
+
+.ustmenu li {
+	float: left;
+}
+
+.ustmenu li.current a {
+   background-color: red;
+   color:#FFFFFF;
+}
+
+
+
+.ustmenu ul a {
+	background-image: url('_img/menu_separator.gif');
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 20px;
+	padding-left: 20px;
+	display: block;
+	line-height: 50px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #333333;
+}
+
+.ustmenu ul a:hover {
+	background-color:#666666;
+	color:#FFFFFF;
+
+}
+
+.ustmenu ul a:hover {
+	background-color:#05a4e9;
+	color:#FFFFFF;
+
+}
+
+
+
+/* header divleri bitti */
+
+/* içerik css leri*/
+
+#slogan {
+	margin-top:180px;
+	margin-bottom:180px;
+	float:left;
+}
+
+#icerik {
+	float:left;
+	width:960px;
+}
+
+#baslik {
+	float:left;
+	width:920px;
+	height:90px;
+	margin:0px 10px 0px 10px;
+	padding:0px 10px 0px 10px;
+	background-image:url('_img/header_bg.jpg');
+	background-repeat:repeat-x;
+	background-position:left bottom;
+}
+
+#tam_icerik_sayfa {
+	float:left;
+	 width:600px;
+	margin:0px 10px 0px 10px;
+	padding:20px 0px 20px 10px;
+}
+
+#icerik_sayfa {
+	float:left;
+	 width:100%;
+	margin:0px 10px 0px 10px;
+	padding:20px 0px 20px 10px;
+}
+
+
+
+
+h1 {
+	background-image:url('_img/div_bg.png');
+	padding:20px 20px 20px 20px;
+	font-family:Arial;
+	font-weight:bold;
+	font-size:28px;
+	color:#ffffff;
+	float:left;
+
+}
+
+h2 {
+	background-image:url('_img/div_bg.png');
+	padding:20px 20px 20px 20px;
+	font-family:Arial;
+	font-weight:normal;
+	font-size:18px;
+	color:#ffffff;
+	clear:both;
+}
+
+h2 span {
+	color:#ed3d20;
+}
+
+h3 {
+	padding:30px 0px 20px 0px;
+	font-family:Arial;
+	font-weight:normal;
+	font-size:18px;
+	color:#ffffff;
+	border-bottom:1px #FFFFFF solid;
+	margin-bottom:10px;
+	
+}
+
+h4 {
+	margin-top:35px;
+	font-family:Arial;
+	font-weight:bold;
+	font-size:24px;
+	color:#727272;
+	float:left;		
+}
+
+h5 {
+	font-family:Arial;
+	font-weight:bold;
+	font-size:18px;
+	color:#727272;
+	margin:10px 0px 10px 0px;
+}
+
+h6 {
+	font-family:Arial;
+	font-weight:bolder;
+	font-size:12px;
+	color:#727272;
+	margin:20px 0px 10px 0px;
+	float:left;
+	width:100%;
+}
+
+
+p {
+	text-indent:15px;
+	font-size:12px;
+	padding-bottom:5px;
+	line-height:18px;
+	font-style:normal;
+	
+}
+
+
+.sag_menu {
+	width:230px; 
+	margin:0px 10px 0px 80px; 
+	float:left;
+	
+}
+
+.sag_menu ul {
+	padding:10px 10px 20px 10px;
+}
+
+
+.sag_menu li {
+    overflow:hidden;
+    white-space:nowrap;
+    line-height:30px;
+
+    
+}
+
+.sag_menu li a {
+	color:#727272;
+	display:block;
+	background-image:url('_img/ok_normal.gif');
+	background-repeat:no-repeat;
+	background-position:left center;
+	text-indent:20px;
+
+
+}
+
+ 
+.sag_menu li a:hover {
+	color:#727272;
+	text-decoration:underline;
+	background-image:url('_img/ok.gif');
+	background-repeat:no-repeat;
+	background-position:left center;
+
+	
+}
+
+
+#galeri {
+	width:100%;
+	margin-top:40px;
+	float:left;
+	clear:both;
+}
+
+
+.img_golge3 {
+	background-image:url('_img/golge2.png'); 
+	background-repeat:no-repeat; 
+	background-position:center bottom; 
+    clear: right; 
+    float: left;
+}
+
+.img_golge3 img {
+	display: block;
+	position: relative;
+	background-color: #fff;
+	margin-bottom:11px;
+	left: 0px; 
+	top: 0px; 
+	border:1px #CCCCCC solid
+  } 
+
+#foto {
+	width:130px;
+	height:190px;
+	margin:10px 20px 20px 0px; 
+	float:left;
+}
+
+#foto_açıklama {
+	font-size:11px;
+	line-height:12px;
+}
+
+.foto_golge2 {
+	background-image:url('_img/golge2.png'); 
+	background-repeat:no-repeat; 
+	background-position:center bottom; 
+    clear: both; 
+    float: left;
+}
+
+.foto_golge2 img {
+  display: block;
+  position: relative;
+  background-color: #fff;
+  margin-bottom:11px;
+  border:1px #e3e3e3 solid;
+  float:left;
+  }
+  
+#urun_nav {
+	margin:20px 0px 20px 0px;
+}
+
+#urun_nav a {
+	text-decoration:none;
+	color:#727272;
+}
+
+#urun_nav a:hover {
+	text-decoration:underline;
+
+}
+
+
+
+/* içerik css leri bitti*/
+
+/* witget css leri*/
+
+.img_golge {
+	background-image:url('_img/golge1.png'); 
+	background-repeat:no-repeat; 
+	background-position:center bottom; 
+    clear: both; 
+    float: left;
+}
+
+.img_golge img {
+  display: block;
+  position: relative;
+  background-color: #fff;
+  margin-bottom:50px;
+  } 
+
+
+
+
+
+
+#buton1{
+	 height:55px;
+	 margin-top:20px;
+	 background-color:#ed3d20;
+	 text-align:center;
+	 display:block;
+	 float:left;
+	 outline:none;
+}
+
+#buton1 a {
+	display:block;
+	color:white;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	padding:18px 15px 18px 15px;
+}
+
+#buton2{
+	 height:30px;
+	 margin-top:20px;
+	 background-color:#ed3d20;
+	 text-align:center;
+	 display:block;
+	 float:right;
+	 outline:none;
+}
+
+#buton2 a {
+	display:block;
+	color:white;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	padding:18px 15px 18px 15px;
+}
+
+
+.liste li {
+	list-style-type:disc;
+	list-style-position:inside;
+    overflow:hidden;
+    white-space:nowrap;
+
+}
+
+.liste li a {
+	color:#727272}
+
+.liste li a:hover {
+	text-decoration:underline;
+}
+
+
+.haberliste li {
+	list-style-type:none;
+    margin-top:5px;
+	padding-bottom:5px;
+    border-bottom:1px #ffffff dotted;
+}
+
+.haberliste li:first-child {
+    margin-top:0px;
+}
+
+.haberliste li a {
+	color:#ffffff;
+}
+
+.haberliste li a:hover {
+	text-decoration:underline;
+}
+
+#link1 {
+	margin-top:20px;
+}
+
+/* witget css leri bitti*/
+
+/* footer css leri*/
+#footer {
+	float:left;
+}
+
+
+#footerust {
+	height:260px;
+	width:960px;
+	background-image:url('_img/div_bg.png');
+
+}
+
+
+#markalar {
+	background-color:#3E3E3E;
+	height:100px;
+	width:960px;
+	background-image:url('_img/golge_footer.png');
+	background-position:center top;
+	background-repeat:no-repeat;
+	
+}
+
+#markalar img{
+	float:left;
+	margin:25px 75px 0px 75px;
+	
+}
+
+
+.widget1 {
+	width:280px;
+	margin:0px 20px 0px 20px;
+	float:left;
+	color:#FFFFFF;
+}
+
+
+#footer_menu {
+	background-color:#000000;
+	height:36px;
+}
+.urun
+	{
+	
+	text-align:center;
+	font-size:18px;
+	width:32%;
+	float: left;
+	
+	}
+	#container ,#container2,#container3,#container4,#container5,#container6
+	{
+	
+	text-align:left;
+	font-size:18px;
+	float: left;
+ 	position:relative;
+	width:100%;  
+	display:none;
+	}
+	.urundetay
+	{ 
+		 width:98%;
+	}
+	#anaurun{ width:100%;
+	]
+}
+
+
+/*  
+#footer_menu ul {
+	list-style-type: none;
+	margin-left:10px;
+	margin-top:12px;
+	width:70%;
+	float:left;
+}
+
+#footer_menu li {
+	float:left;
+	line-height:15px;
+}
+#footer_menu ul a {
+	padding-right: 10px;
+	padding-left: 10px;
+	display: block;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #343434;
+}
+
+#footer_menu ul a:hover {
+	color:#cccccc;
+	
+}
+*/
+
+
+/* footer css leri bitti*/
+
+		/*super box Custom Theme */
+		#superbox-overlay{background:#e0e4cc;}
+		#superbox-container .loading{width:32px;height:32px;margin:0 auto;text-indent:-9999px;background:url(styles/loader.gif) no-repeat 0 0;}
+		#superbox .close a{float:right;padding:0 5px;line-height:20px;background:#333;cursor:pointer;}
+		#superbox .close a span{color:#fff;}
+		#superbox .nextprev a{float:left;margin-right:5px;padding:0 5px;line-height:20px;background:#333;cursor:pointer;color:#fff;}
+		#superbox .nextprev .disabled{background:#ccc;cursor:default;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
